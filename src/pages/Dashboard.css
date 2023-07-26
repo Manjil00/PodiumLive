@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Crete Round", serif;
+  font-weight: 200;
+}
+
+body {
+  min-height: 200vh;
+}
+
+nav {
+  background: #1f1f1f;
+  display: flex;
+  justify-content: flex-end; /* Distribute content across the full width */
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0; /* Reset margin for the ul element */
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
+nav ul li a::after {
+  content: "";
+  height: 2px;
+  display: block;
+  width: 0%;
+  transition: width 200ms ease-in-out;
+  background: #f0f0f0;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+  transition: width 200ms ease-in-out;
+}
+
+nav .logo {
+  margin: 0 30px 0 0; /* Adjust the margin as needed */
+}
+
+nav .logo a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: bold;
+}
