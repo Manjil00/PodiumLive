@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Profile() {
+function AboutUs() {
   return (
     <><nav>
           <h1 class="logo"><a href="/dashboard">Podium Live</a></h1>
@@ -12,10 +12,12 @@ function Profile() {
               <li><a href="/profile">Profile</a></li>
           </ul>
       </nav>
-      <div>
+      <div >
+        
         
         </div></>
   )
 }
 
-export default Profile
+export default AboutUs
+
