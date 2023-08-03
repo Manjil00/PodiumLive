@@ -1,5 +1,6 @@
-import React from 'react'
-import vmsg from 'vmsg'
+import React from 'react';
+import vmsg from 'vmsg';
+import "./Group.css";
 
 
 const recorder=new vmsg.Recorder({
@@ -47,7 +48,7 @@ class Group extends React.Component{
 
         return(
             <React.Fragment>
-                <button className='Recordbtn' onClick={this.record}disabled={isLoading}>
+                <button class="custom-btn btn-4"  onClick={this.record}disabled={isLoading}>  
                 {isRecording ? "Stop": "Record"}
                 </button>
                 <ul style={{listStyle:'none',padding:0}}></ul>
