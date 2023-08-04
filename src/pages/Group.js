@@ -1,11 +1,12 @@
 import React from 'react'
 import vmsg from 'vmsg'
 
+
 const recorder=new vmsg.Recorder({
     wasmURL:'https://unpkg.com/vmsg@0.3.0/vmsg.wasm'
 })
 
-class App extends React.Component{
+class Group extends React.Component{
     state={
         isLoading:false,
         isRecording: false,
@@ -46,23 +47,17 @@ class App extends React.Component{
 
         return(
             <React.Fragment>
-                <button onClick={this.record}>disabled={isLoading}
+                <button className='Recordbtn' onClick={this.record}disabled={isLoading}>
                 {isRecording ? "Stop": "Record"}
-                
-                
                 </button>
+                <ul style={{listStyle:'none',padding:0}}></ul>
+                {recordings.map(url=>(
+                    <li key={url}>
+                        <audio src={url} controls></audio>
+                    </li>
+                ))}
             </React.Fragment>
         )
     }
 }
-
-
-function Group() {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
 export default Group
