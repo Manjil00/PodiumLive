@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Profile.css';
 
 function Profile() {
   return (
@@ -14,12 +15,58 @@ function Profile() {
 
     </ul>
   </nav>
+  <div class="container">
+  <h1 class="title">Your Profile </h1>
+  <div class="row cf">
+    <div id="card1" class="card four col">
+      <div class="image-wrapper"></div>
+      <h3 class="name"></h3>
+      <div class="info cf">
+        <div class="four col"><span class="number">100</span>Record</div>
+        <div class="four col"><span class="number">28</span>Live Joined</div>
+        <div class="four col"><span class="number">179</span>Created</div>
+      </div>
+      <div class="options">
+        <ul>
+          <li><span class="icon"><i class="fa fa-plus" aria-hidden="true"></i></span>Add to team</li>
+        </ul>
+      </div>
+    </div>
 
-  <div>
+    <div id="card2" class="card four col">
+      <div class="header"></div>
+      <div class="wrapper">
+        <div class="image-wrapper"></div>
+        <h3 class="name">Manjil Maharjan</h3>
+        <div class="social cf">
+          <div class="four col">
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </div>
+          <div class="four col">
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
+          <div class="four col">
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="info">
+          <p>🎙️ Podcast Junkie 📣 | Diving into Conversations That Matter | Amplifying Voices | Tune in and Join the Discussion! 🎤 #PodcastAddict</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="card3" class="card four col">
+      <div class="header"></div>
+      <div class="wrapper">
+        <h2 class="name">Manjil Maharjan</h2>
+        <h4 class="name">Do you want to Logout?</h4>
+      </div>
       
-
-    </div></>
-  )
+    </div>
+  </div>
+</div>
+</>
+  );
 }
 
 export default Profile

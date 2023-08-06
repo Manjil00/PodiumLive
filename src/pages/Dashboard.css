@@ -11,10 +11,13 @@
 
 body {
   min-height: 200vh;
+  /* background-color: #1f1f1f; */
+  background-color: #f0f0f0;
+  ;
 }
 
 nav {
-  background: #1f1f1f;
+  background: #ff8400;
   display: flex;
   justify-content: flex-start; /* Distribute content with space between logo and links */
   align-items: center;
@@ -58,5 +61,5 @@ nav .logo a {
   text-decoration: none;
   color: #f0f0f0;
   font-weight: bold;
-  
+  color: white;
 }
