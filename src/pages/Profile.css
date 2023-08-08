@@ -3,15 +3,14 @@ html, body{
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: #ddd;
+	background-color: #f0f0f0;
   font-family: 'Arimo', sans-serif;
   width:100%
 }
 
 .title{
   text-align: center;
-  color: #ffffff
-  ;
+  color: #000;
 }
 
 /* CONTAINERS */ 
@@ -246,4 +245,5 @@ html, body{
 	margin: 0 auto;
 	font-size: 20px;
 }
+
 

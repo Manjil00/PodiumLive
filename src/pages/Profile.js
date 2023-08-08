@@ -38,17 +38,6 @@ function Profile() {
       <div class="wrapper">
         <div class="image-wrapper"></div>
         <h3 class="name">Manjil Maharjan</h3>
-        <div class="social cf">
-          <div class="four col">
-            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-          </div>
-          <div class="four col">
-            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          </div>
-          <div class="four col">
-            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-          </div>
-        </div>
         <div class="info">
           <p>🎙️ Podcast Junkie 📣 | Diving into Conversations That Matter | Amplifying Voices | Tune in and Join the Discussion! 🎤 #PodcastAddict</p>
         </div>
@@ -59,7 +48,8 @@ function Profile() {
       <div class="header"></div>
       <div class="wrapper">
         <h2 class="name">Manjil Maharjan</h2>
-        <h4 class="name">Do you want to Logout?</h4>
+        <h4 class="name">Do you want to </h4>
+        <a href="/login">Logout?</a>  
       </div>
       
     </div>
