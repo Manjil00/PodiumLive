@@ -10,7 +10,9 @@
 
 body {
   min-height: 200vh;
-  background-color: #f0f0f0;   ;
+  /* background-color: #f0f0f0;    */
+  background:url('https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBvZGNhc3QlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');
+
 }
 
 nav {
@@ -72,8 +74,85 @@ nav .logo a {
   position: fixed;
   padding: 10px 30px; /* Add some padding to the navigation bar */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-  top: 5.5%;
-  left: 20%;
+  top: 4%;
+  center: 20%;
+  right: 20px;
+  object-fit: cover;
+  
+  
 }
 
 /* // nav pachi ko */
+/* *******************
+placing button in center of screen
+******************* */
+body {
+  background: #f0f0f0;
+  width: 100%;
+  display: table;
+  height: 100vh;
+}
+body > div {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+/* ******************* */
+.trigger {
+  position: relative;
+  background: #444;
+  width: 120px;
+  height: 120px;
+  border: none;
+  border-radius: 50%;
+  
+  /* img replace */
+  overflow: hidden;
+  text-indent: 100%;
+  color: transparent;
+  white-space: nowrap;
+  
+  cursor: Add;
+}
+
+.trigger span,
+.trigger span::before,
+.trigger span::after {
+  position: absolute;
+  width: 44px;
+  height: 4px;
+  background: white;
+  border-radius: 4px;
+}
+
+.trigger span {
+  top: calc(50% - 2px);
+  left: calc(50% - 22px);
+  transition: transform .3s;
+}
+
+.trigger span::before,
+.trigger span::after {
+  content: '';
+  left: 0;
+  transition: transform .3s, width .3s;
+}
+.trigger span::before {
+  bottom: 12px;
+}
+.trigger span::after {
+  top: 12px;
+}
+
+.trigger:hover span {
+  transform: rotate(180deg);
+}
+.trigger:hover span::before {
+  width: 50%;
+  transform: translateX(-2px) translateY(5px) rotate(-45deg);
+}
+
+.trigger:hover span::after {
+  width: 50%;
+  transform: translateX(-2px) translateY(-5px) rotate(45deg);
+}
